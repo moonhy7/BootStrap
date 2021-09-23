@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 길이 그리드</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+        .row {
+            margin-bottom : 15px;
+        }
+
+        [class*='col'] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: darkblue;
+            border: 2px solid white;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--justify-content-md-center : 콘텐츠 가운데 정렬-->
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">1 of 3</div>
+            <!--col-중단점-auto : 가변길이 열 생성--->
+            <div class="col-md-auto">Variable width content</div>
+            <div class="col col-lg-2">3 of 3</div>
+        </div>
+        <div class="row">
+            <div class="col">1 of 3</div>
+            <div class="col-md-auto">Variable width content</div>
+            <div class="col col-lg-2">3 of 3</div>
+        </div>
+    </div>
+</body>
+</html>

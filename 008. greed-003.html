@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수평 중첩</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+        .row {
+            margin-bottom : 15px;
+        }
+
+        [class*='col'] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: darkblue;
+            border: 2px solid white;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!--수평 중첩 : col-sm* 열을 사용하여 화면이 작아지면 
+                            수평으로 중첩되도록 열 사이즈 조절
+                            태블릿 이상 다단 구성
+                            모바일 이하 1단 구성-->
+            <div class="col-sm-8">col-sm-8</div>
+            <div class="col-sm-4">col-sm-4</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">col-sm</div>
+            <div class="col-sm">col-sm</div>
+            <div class="col-sm">col-sm</div>
+        </div>
+    </div>
+</body>
+</html>
