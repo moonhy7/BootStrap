@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical list</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <!--navbar : 네비게이션 바 선언-->
+    <!--navbar-dar : 네비게이션 바 스타일-->
+    <!--bg-dark : 네비게이션 바 배경색-->
+    <!--fixed-top : 고정형 네비게이션 바 선언-->
+    <!--navbar-expand : 화면크기에 따라 네비게이션 바 가로표출할지, 세로표출할지 결정-->
+    <div class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">        
+        <div class="container">
+            <!--navbar-brand : 네비게이션 바 제목 설정, 홈 버튼-->
+            <a href="#" class="navbar-brand">BootStrap</a>
+            <!--navbar-toggler : collapse플러그인 toggle 기능 추가-->
+            <!--data-bs-toggle="collapse" : 콘텐츠 숨김-->
+            <!--data-bs-target : 콘텐츠 숨길 대상 설정-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbar-content">
+                <!--navbar-toggler-icon : 콘텐츠 숨길 시 버튼 생성-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--네비게이션 바 콘텐츠 영역, collapse 플러그인-->
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <!--navbar-nav : 네비게이션 바 콘텐츠 선언-->
+                <!--me-auto : 좌우 마진 자동 설정-->
+                <ul class="navbar-nav me-auto">
+                    <!--navbar-item : 네비게이션 바 콘텐츠-->
+                    <!--dropdown : 드롭다운 목록 선언-->
+                    <li class="nav-item dropdown">
+                        <!--nav-link : 네비게이션 바 링크 선언-->
+                        <!--dropdown-toggle : 드롭다운 목록 숨김-->
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">HTML5</a>
+                        <!--dropdown-menu : 드롭다운 영역 설정-->
+                        <div class="dropdown-menu">
+                            <!--dropdown-item : 드롭다운 콘텐츠-->
+                            <a href="#" class="dropdown-item">Geolaction</a>
+                            <a href="#" class="dropdown-item">Drag and Drop</a>
+                            <!--dropdown-divider : 드롭다운 나눔 줄 추가-->
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Motion</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">CSS3</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ECMAScript5</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Node.js</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">API</a></li>
+                </ul>
+                <!--form-inline : inline 폼 선언-->
+                <!--row-cols-lg-auto : bootstrap5 form-inline 대체-->
+                <form action="" class="row-cols-lg-auto">
+                    <!--form-control : 폼 input박스 사이즈 조절-->
+                    <input type="text" class="form-control" placeholder="Search">
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Node.js</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">API</a></li>
+                </ul>
+            </div>
+            <!--네비게이션 바 콘텐츠 영역, collapse 플러그인-->
+        </div>
+    </div>
+    <!--container-fluid class : fluid layout 제공, 화면크기에 맞게 레이아웃 변경-->
+    <!-- <div class="container-fluid"> -->
+    <!--container class : fixed layout 제공, 가로길이 960px로 고정-->
+    <div class="container">
+        <div class="row">
+            <!--768px 이상에서는 열 3개 병합-->
+            <!--576px 이하에서는 열 4개 병합-->
+            <div class="col-md-3 col-sm-4">
+                <!--list-group : 수직 목록 생성-->
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">HTML5</a>
+                    <a href="#" class="list-group-item list-group-item-action">CSS3</a>
+                    <a href="#" class="list-group-item list-group-item-action">ECMAScript5</a>
+                </div>
+                <br>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Jquery</a>
+                    <a href="#" class="list-group-item list-group-item-action">API</a>
+                </div>
+                <br>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">About</a>
+                    <a href="#" class="list-group-item list-group-item-action">Help</a>
+                </div>
+            </div>
+            <!--열 9개 병합-->
+            <!--576px 이하에서는 열6개 병합-->
+            <div class="col-9 col-sm-6">
+                <h1>Bluberry</h1>
+                <p>북아메리카를 비롯한 북반구 전역에 분포하는 식물 및 열매. 북아메리카 등지에서 품종개량 등을 활발하게 한다.
+                    이름과 달리 딸기, 라즈베리, 블랙베리 등의 베리류와는 전혀 관계가 없는 진달래과 식물로,
+                    진달래과에 속하는 베리로는 크랜베리(넌출월귤), 월귤(링곤베리), 빌베리 등이 있다.</p>
+                <p>북아메리카를 비롯한 북반구 전역에 분포하는 식물 및 열매. 북아메리카 등지에서 품종개량 등을 활발하게 한다.
+                    이름과 달리 딸기, 라즈베리, 블랙베리 등의 베리류와는 전혀 관계가 없는 진달래과 식물로,
+                    진달래과에 속하는 베리로는 크랜베리(넌출월귤), 월귤(링곤베리), 빌베리 등이 있다.</p>
+                <p>북아메리카를 비롯한 북반구 전역에 분포하는 식물 및 열매. 북아메리카 등지에서 품종개량 등을 활발하게 한다.
+                    이름과 달리 딸기, 라즈베리, 블랙베리 등의 베리류와는 전혀 관계가 없는 진달래과 식물로,
+                    진달래과에 속하는 베리로는 크랜베리(넌출월귤), 월귤(링곤베리), 빌베리 등이 있다.</p>
+                <p>북아메리카를 비롯한 북반구 전역에 분포하는 식물 및 열매. 북아메리카 등지에서 품종개량 등을 활발하게 한다.
+                    이름과 달리 딸기, 라즈베리, 블랙베리 등의 베리류와는 전혀 관계가 없는 진달래과 식물로,
+                    진달래과에 속하는 베리로는 크랜베리(넌출월귤), 월귤(링곤베리), 빌베리 등이 있다.</p>
+                <p>북아메리카를 비롯한 북반구 전역에 분포하는 식물 및 열매. 북아메리카 등지에서 품종개량 등을 활발하게 한다.
+                    이름과 달리 딸기, 라즈베리, 블랙베리 등의 베리류와는 전혀 관계가 없는 진달래과 식물로,
+                    진달래과에 속하는 베리로는 크랜베리(넌출월귤), 월귤(링곤베리), 빌베리 등이 있다.</p>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

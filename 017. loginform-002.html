@@ -9,8 +9,37 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <style>
+        .login {
+            width: 320px;
+            background: #fff;
+            margin: 30px auto;
+            border: 1px solid #e5e5e5;
+            box-shadow: rgba(200, 200, 200, .7) 0 4px 10px -1px;
+        }
+        .login h1 a {
+            background-image: url('images/logo.png');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 189px 47px;
+            height: 47px;
+            margin: 0 auto 0 25px;
+            padding: 0;
+            width: 189px;
+            text-indent: -9999px;
+            overflow: hidden;
+            display: block;
+        }
+        .login h1 a {
+            width: 100%;
+        }
+        .login form {
+            margin: 0px auto;
+            border: none;
+            margin-top: 30px;
+            padding: 20px;
+        }
         .input-group-text-label {
-            width: 8%;
+            width: 33%;
         }
     </style>
 </head>
@@ -21,8 +50,9 @@
         </h1>
         <!--role="form" : BootStrap의 form요소 사용 선언-->
         <form role="form" action="login.jsp" name="loginform" id="loginform" method="post">
-            <!--form-group : label, input 요소 묶음-->
+            <!--input-group : label, input 요소 묶음-->
             <div class="input-group">
+                <!--input-group-text : label영역 표시-->
                 <label class="input-group-text input-group-text-label" for="user_login">아이디</label>
                 <!--form-control : input을 화면 너비에 꽉차게 표시
                                    input 사이즈 조절, 중단점과 함께 사용 가능-->

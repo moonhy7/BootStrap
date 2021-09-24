@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼그룹-중첩/수직</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!--버튼 그룹 중첩-->
+    <div class="btn-group" role="group" aria-label="Basic Button Group Example">
+        <button type="button" class="btn btn-primary">btn1</button>
+        <button type="button" class="btn btn-primary">btn2</button>
+    
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle"
+            data-bs-toggle="dropdown">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="" class="dropdown-item">Dropdown Link</a></li>
+                <li><a href="" class="dropdown-item">Dropdown Link</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--버튼 그룹 수직-->
+    <!--btn-group-vertical : 버튼그룹 수직목록으로 표출-->
+    <div class="btn-group-vertical" role="group" aria-label="Basic Button Group Example">
+        <button type="button" class="btn btn-primary">btn1</button>
+        <button type="button" class="btn btn-primary">btn2</button>
+    
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle"
+            data-bs-toggle="dropdown">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="" class="dropdown-item">Dropdown Link</a></li>
+                <li><a href="" class="dropdown-item">Dropdown Link</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
