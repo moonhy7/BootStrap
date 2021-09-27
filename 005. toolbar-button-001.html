@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>toolbar-button</title>
+    <title>toolbar button</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -20,7 +20,7 @@
     <!--bg-dark : 네비게이션 바 배경색-->
     <!--fixed-top : 고정형 네비게이션 바 선언-->
     <!--navbar-expand : 화면크기에 따라 네비게이션 바 가로표출할지, 세로표출할지 결정-->
-    <div class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+    <div class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">        
         <div class="container">
             <!--navbar-brand : 네비게이션 바 제목 설정, 홈 버튼-->
             <a href="#" class="navbar-brand">BootStrap</a>
@@ -59,8 +59,9 @@
                     <li class="nav-item"><a href="#" class="nav-link">API</a></li>
                 </ul>
                 <!--form-inline : inline 폼 선언-->
-                <form action="" class="form-inline">
-                    <!--form-control : 폼 input박스 스타일 적용-->
+                <!--row-cols-lg-auto : bootstrap5 form-inline 대체-->
+                <form action="" class="row-cols-lg-auto">
+                    <!--form-control : 폼 input박스 사이즈 조절-->
                     <input type="text" class="form-control" placeholder="Search">
                 </form>
                 <ul class="navbar-nav">
